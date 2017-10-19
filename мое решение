@@ -1,0 +1,17 @@
+s = [int(i)for i in input().split()]
+z=[]
+z=s[1:]
+z.append(int(s[0]))
+x=[]
+x=s[0:-1]  
+x.insert(0,int(s[-1]))
+c=[]
+if len(s)==1:
+  print(int(s[0]))
+else:
+  for i in range (0,len(s)):
+    d=int(x[i])+int(z[i])
+    c.append(int(d))
+    print(int(c[i]),end=' ')
+
+  
